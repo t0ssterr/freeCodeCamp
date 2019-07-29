@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Name of the site</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1 id="title">Survey Form</h1>
+	<div class="form-outer">
+		<form action="#" method="post" id="survey-form">
+			
+			<p id="description">Let us know how we can improve freeCodeCamp</p>
+			
+			<div class="rowTab">
+				<label for="name" class="labels">* Name:</label>
+				<div class="rightTab">
+				<input class="input-field" type="text" name="name" id="name" required
+								placeholder="Enter you name">
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<label for="email" class="labels">* Email:</label>
+				<div class="rightTab">
+				<input class="input-field" type="email" name="email" id="email" required
+								placeholder="Enter you Email">
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<label for="number" class="labels">* Age:</label>
+				<div class="rightTab">
+				<input class="input-field" type="number" name="number" id="number" required
+								min="1" max="125" placeholder="Age">
+				</div>
+			</div>	
+			
+			<div class="rowTab">
+				<label for="dropdown" class="labels">Which option best describes your current role?</label>
+				<div class="rightTab">
+				<select class="select-field" id="dropdown" name="selectPost">
+					<option value="" disabled>Select an option</option>
+					<option value="student" selected>Student</option>
+					<option value="job">Full Time Job</option>
+					<option value="lerner">Full Time Lerner</option>
+					<option value="preferNo">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<label for="radioTab" class="labels">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+				<div class="rightTab">
+				<div id="radioTab">
+					<ul style="list-style: none;">
+						<li class="radio">
+							<input type="radio" id="definitely" name="userRadio" value="definitely">
+							<label for="definitely">Definitely</label>
+						</li>
+						<li class="radio">
+							<input type="radio" id="maybe" name="userRadio" value="maybe">
+							<label for="maybe">Maybe</label>
+						</li>
+						<li class="radio">
+							<input type="radio" id="notSure" name="userRadio" value="notSure">
+							<label for="notSure">Not sure</label>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<label for="most-like" class="labels">What do you like most in FCC:</label>
+				<div class="rightTab">
+				<select class="select-field" id="most-like" name="mostLike">
+					<option value="" disabled selected>Select an option</option>
+					<option value="challenges">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="openSource">Open Source</option>
+				</select>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<label for="preferences" class="labels">Things that should be improved in the future
+							(Check all that apply):</label>
+				<div class="rightTab">			
+				<div id="preferences">
+					<ul style="list-style: none;">
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="1">
+								Front-end Projects
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="2">
+								Back-end Projects
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="3">
+								Data Visualization
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="4">
+								Challenges
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="5">
+								Open Source Community
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="6">
+								Gitter help rooms
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="7">
+								Videos
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="8">
+								City Meetups
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="9">
+								Wiki
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="10">
+								Forum
+							</label>
+						</li>
+						<li class="check">
+							<label>
+								<input type="checkbox" name="prefer" value="11">
+								Additional Courses
+							</label>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+
+			<div class="rowTab">
+				<label for="comment" class="labels">Any Comments or Suggestions?</label>
+				<div class="rightTab">
+				<textarea class="input-field" id="comment" rows="3" cols="38" placeholder="Enter your comment here..."></textarea>
+				</div>
+			</div>
+				<button type="submit" id="submit">Submit</button>
+		</form>
+	</div>	
+	</body>
+</html>	
+
+
